@@ -35,6 +35,7 @@ if __name__ == '__main__':
     from optparse import OptionParser
     usage = 'profile_to_csv.py [arg] ...'
     parser = OptionParser(usage=usage)
+    parser.allow_interspersed_args = False
 
     if not sys.argv[1:]:
         parser.print_usage()
